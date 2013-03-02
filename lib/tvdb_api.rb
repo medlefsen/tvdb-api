@@ -104,7 +104,6 @@ class TVDBApi
     if query
       options[:query] = query
     end
-    puts path
     ex = nil
     @tries.times do
       begin
