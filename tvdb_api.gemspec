@@ -13,4 +13,5 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = [
     "Readme.md"
   ]
+  s.add_dependency('httparty', '~> 0.10.0')
 end
