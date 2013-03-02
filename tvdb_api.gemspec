@@ -6,6 +6,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Matt Edlefsen"]
   s.email       = 'matt@xforty.com'
   s.files       = `git ls-files`.split("\n")
+  s.license     = "MIT"
   s.homepage    = 'https://github.com/medlefsen/tvdb-api'
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
