@@ -109,4 +109,8 @@ class TVDBApi
     raise ex
   end
 
+  def [](*args)
+    get args
+  end
+
 end

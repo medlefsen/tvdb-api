@@ -21,13 +21,15 @@ Usage
     client.get_series 'Futurama'
     client.get_series_by_remote_id :imdb, 'tt0149460'
     
-    # Files Interface
+    ## Files Interface
+
+    client['updates_day.xml']
     
     # Adds .xml for you
-    client.get 'languages' # => languages.xml
+    client['languages'] # => languages.xml
 
     # Automatically gets the default language if not specified
-    client.get 'series/73871' => series/73871/en.xml
+    client['series/73871'] => series/73871/en.xml
 
     # Allows array input for more structured calls
-    client.get [:series, 73871, :default, 1, 1] => 'series/73871/default/1/1/en.xml'
+    client[:series, 73871, :default, 1, 1] => 'series/73871/default/1/1/en.xml'
