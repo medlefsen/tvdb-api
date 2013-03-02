@@ -76,15 +76,23 @@ class TVDBApi
         path += '/' + @lang + '.xml'
       end
 
+      if path =~ /(.*\/updates\/)(?!updates_)(.*)/
+        path = $1+"updates_"+$2
+      end
+
       if path =~ /\/[^\/\.]*$/
         path += '.xml'
       end
     end
-    if path !~ /^\/?api\//
-      path = '/api/'+path
+
+    if path[0] != '/'
+      if path !~ /^?api\//
+        path = '/api/'+path
+      else
+        path = '/' + path 
+      end
     end
 
-    path = '/' + path if path[0] != '/'
     path
   end
 

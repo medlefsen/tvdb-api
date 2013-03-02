@@ -20,10 +20,11 @@ Usage
     # Dynamic Interfaces
     client.get_series 'Futurama'
     client.get_series_by_remote_id :imdb, 'tt0149460'
+    # etc...
     
     ## Files Interface
 
-    client['updates_day.xml']
+    client['updates/updates_day.xml']
     
     # Adds .xml for you
     client['languages'] # => languages.xml
@@ -33,3 +34,6 @@ Usage
 
     # Allows array input for more structured calls
     client[:series, 73871, :default, 1, 1] => 'series/73871/default/1/1/en.xml'
+
+    # Adds 'updates_' prefix to updates calls
+    client[:updates, :day] => 'updates/updates_day.xml'
