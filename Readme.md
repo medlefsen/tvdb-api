@@ -10,6 +10,8 @@ Yet another Ruby client for the TVDB ( http://thetvdb.com ).
 
 See http://thetvdb.com/wiki/index.php?title=Programmers_API for documentation of API.
 
+**This library does not do caching. Please use some form of caching when interacting with TVDB**
+
 Usage
 -----
 
