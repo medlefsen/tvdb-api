@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'tvdb-api'
-  s.version     = '0.1'
+  s.version     = '1.0'
   s.summary     = "Straightforward Ruby client for TVDB"
   s.description = "Clean Ruby API interface to The TVDB"
   s.authors     = ["Matt Edlefsen"]
